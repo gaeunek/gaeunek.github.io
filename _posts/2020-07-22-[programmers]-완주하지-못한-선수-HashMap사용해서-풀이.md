@@ -2,7 +2,7 @@
 layout: post
 title: "[programmers]완주하지 못한 선수 HashMap사용해서 풀이"
 subtitle : level 1
-tags: [algorithm, java]
+tags: [algorithm]
 author: Gaeun Kim
 comments : True
 ---
