@@ -1,23 +1,23 @@
 # Site Settings
 baseurl: ""
-url : "https://naye0ng.github.io"
+url : "https://gaeunek.github.io"
 
 # Blog Settings
 theme_settings :
-  title : Grape Theme
+  title : Gaeune's Blog
   favicon : assets/favicon.ico
 
   # Profile Settings
   profile :
     image : assets/img/smile.png
-    username : Nayeong Kim
-    description : creator of Grape-Theme! Grape-Theme is my first jekyll theme and you can customize this theme easily.
+    username : Gaeun Kim
+    description : 개발 꿈나무의 Blog.
     experience :
-      - start : 2017-05-03
-        end : 2018-05-06
-        experience : company name, title
+      - start : 2020-07-23
+        end : 
+        experience : 
     skills : 
-      - skill : HTML5 & CSS
+      - skill : Java, Spring, MySQL
         value : 85  # Percent value
         
   # Icons
