@@ -7,15 +7,13 @@ author: Gaeun Kim
 comments : True
 ---
 
-<br>
-
-### 문제
+<h2>문제</h2>
 
 [programmers 완주하지 못한 선수 문제 보러가기](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
 <br><br>
 
-### 풀이
+<h2>풀이</h2>
 
 ```java
 import java.util.HashMap;
@@ -50,17 +48,17 @@ public class Solution1 {
 
 <br>
 
-### 문제점 해결
+<h2>문제점 해결</h2>
 
 처음 이 문제를 풀었을 땐 `Arrays.sort()`를 사용해서 풀었었다. 다른 사람들의 풀이를 보고 `HashMap`을 사용해서 푸는 방법이 있음을 알았고 `getOrDefault()`를 처음 접하게 되었다.
 
+<br>
 
-
-#### getOrDefault()
+<h3>getOrDefault()</h3>
 
 HashMap<Key, Value> 에서 Key값이 없다면 설정한 default 값을 반환한다.
 
-
+<br>
 
 ```java
 //participant = {"mislav", "stanko", "mislav", "ana"}
@@ -69,7 +67,7 @@ for (String p : participant) hashMap.put(p, hashMap.getOrDefault(p, 0) + 1);
 //mislav=2, stanko=1, ana=1
 ```
 
-participant에 mislav가 2명인것을 확인할 수 있다.
+위의 코드를 통해 participant에 "mislav"가 2명인것을 확인할 수 있다.
 
 예를 들어 hashMap에 put할 때, participant배열의 0번 인덱스 값은 "mislav"이다.
 
@@ -79,7 +77,7 @@ key는 "mislav"이며 value는 hashMap에 **"mislav"**가 **이미 존재**하�
 
 participant의 2번째 인덱스 값 또한 mislav이다.  **"mislav"**가 **이미 존재**하기 때문에 **key "mislav"의 value값 1을 반환한다.** 여기에 1이 더해지면 2가 된다.
 
-
+<br>
 
 ```java
  for (String c : completion) hashMap.put(c, hashMap.getOrDefault(c, 0) - 1);

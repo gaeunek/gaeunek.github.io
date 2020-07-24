@@ -7,15 +7,13 @@ author: Gaeun Kim
 comments : True
 ---
 
-<br>
-
-### 문제
+<h2>문제</h2>
 
 [programmers 완주하지 못한 선수 문제 보러가기](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
 <br><br>
 
-### 풀이
+<h2>풀이</h2>
 
 ```java
 import java.util.Arrays;
@@ -41,7 +39,7 @@ public class Solution {
 
 <br>
 
-### 문제점 해결
+<h2>문제점 해결</h2>
 
 처음엔 이중for문을 사용했지만 효율성검사에서 모두 탈락했고, 질문하기에 올라온 글 들을 통해 Hash만이 답이라고 생각했지만 결국 sort 하나로 풀었다.
 
