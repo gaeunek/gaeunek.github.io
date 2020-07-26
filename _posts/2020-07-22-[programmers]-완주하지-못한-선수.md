@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[programmers] 완주하지 못한 선수"
-subtitle : level 1
+subtitle : level 1, 해시문제
 tags: [algorithm]
 author: Gaeun Kim
 comments : True
