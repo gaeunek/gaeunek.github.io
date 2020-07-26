@@ -174,7 +174,7 @@ for (int i = 0; i < list_entry.size(); i++) {
 }
 ```
 
-`list_entry`엔 장르 `map`에 저장된 `(장르, 장르별 총 재생 수)` 중 `value`값을 기준으로 내림차순 정렬된 데이터가 저장되어 있다.
+`map`의 `value`값을 기준으로 내림차순 정렬된 데이터를 `list_entry`에 저장한다.
 
 첫번째로 pop장르가 key에 저장되고 list에 저장된 Music객체들을 하나씩 꺼내어 객체에 저장된 genre값과 key값이 같은지 비교한다. list는 이미 play, index를 조건으로 정렬이 되어있기 때문에 장르만 같다면 가장 앞쪽에 저장된 객체의 play값이 그 장르에서 가장 재생 수가 높기때문에 해당 index값을 일단 result에 저장한다.
 
