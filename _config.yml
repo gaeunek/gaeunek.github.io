@@ -5,6 +5,7 @@ url : "https://gaeunek.github.io"
 # Blog Settings
 theme_settings :
   title : Gaeune's Blog
+  author : Gaeun Kim
   favicon : assets/favicon.ico
 
   # Profile Settings
