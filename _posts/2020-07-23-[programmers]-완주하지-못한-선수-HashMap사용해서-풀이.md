@@ -19,7 +19,7 @@ comments : True
 import java.util.HashMap;
 import java.util.Iterator;
 
-public class Solution1 {
+public class Solution {
 
 	public String solution(String[] participant, String[] completion) {
         HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
