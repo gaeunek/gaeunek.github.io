@@ -29,7 +29,6 @@ class Solution {
 
 		Collections.sort(list);
 		
-		// 장르 재생 수 계산
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
 		for (int i = 0; i < genres.length; i++) {
 			map.put(genres[i], map.getOrDefault(genres[i], 0) + plays[i]);
