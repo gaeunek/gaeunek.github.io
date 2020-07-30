@@ -21,41 +21,30 @@ import java.util.*;
 public class Solution {
 	public int[] solution(int[] heights) {
 		int[] answer = new int[heights.length];
+		Height[] arr = new Height[heights.length];
 
 		Stack<Height> stack = new Stack<>();
-		Stack<Height> hold = new Stack<>();
 
 		for (int i = 0; i < answer.length; i++) {
-			stack.push(new Height(heights[i], i));
+			arr[i] = new Height(heights[i], i);
 		}
 
-		while (!stack.isEmpty()) {
-			Height now = stack.pop();
+		for (int i = arr.length - 1; i >= 0; i--) {
+			if (!stack.isEmpty() && arr[i].h > stack.peek().h) {
+				int size = stack.size();
 
-			if (stack.isEmpty()) {
-				answer[now.idx] = 0;
-				break;
-			}
-
-			if (stack.peek().h > now.h) {
-				int size = hold.size();
 				for (int s = 0; s < size; s++) {
-					Height hold_now = hold.pop();
+					Height now = stack.pop();
 
-					if (stack.peek().h > hold_now.h) {
-						answer[hold_now.idx] = stack.size();
-					} else if (stack.peek().h < hold_now.h) {
-						answer[hold_now.idx] = 0;
+					if (arr[i].h > now.h) {
+						answer[now.idx] = arr[i].idx + 1;
 					} else {
-						hold.add(hold_now);
+						stack.add(now);
 					}
 				}
-				answer[now.idx] = stack.size();
-			} else {
-				hold.push(now);
 			}
+			stack.push(arr[i]);
 		}
-
 		return answer;
 	}
 
@@ -67,7 +56,14 @@ public class Solution {
 			this.idx = idx;
 		}
 	}
+    
 }
 ```
 
 <br><br>
+
+<h2>문제점 해결</h2>
+
+`Height`라는 Class를 만든 이유
+
+`{ 5, 3, 1, 2, 3 }`와 같은 입력이 들어왔을 때, `stack`에 `{3, 2, 1}`이 쌓이게 되고,  1번 인덱스의 `3`과 비교해서 `{2, 1}`로 부터 수신이 가능하기 때문에 answer배열에 저장해야하는데 이때, 저장해야하는 값들의 인덱스를 알아야하기 때문에 `Height` Class를 만들었다.
