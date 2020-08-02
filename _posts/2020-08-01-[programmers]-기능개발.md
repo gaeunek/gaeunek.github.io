@@ -16,7 +16,7 @@ comments : True
 <h2>풀이</h2>
 
 ```java
-import java.util.Stack;
+import java.util.*;
 
 public class Solution {
 	public int[] solution(int[] progresses, int[] speeds) {
