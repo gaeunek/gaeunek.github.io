@@ -9,6 +9,8 @@ comments : True
 
 <h2>문제</h2>
 
+[programmers 다리를 지나는 트럭 문제 보러가기](https://programmers.co.kr/learn/courses/30/lessons/42586)
+
 <br><br>
 
 <h2>풀이</h2>
