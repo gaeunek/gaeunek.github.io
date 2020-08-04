@@ -50,3 +50,8 @@ public class Solution {
 }
 ```
 
+<br><br>
+
+<h2>문제점 해결</h2>
+
+두개의 Queue를 사용해서 트럭이 모두 다리를 지날 때 까지 While문을 돌려 총 몇초가 걸렸는지 계산하였다.
