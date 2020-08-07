@@ -63,3 +63,8 @@ public class Solution {
 }
 ```
 
+<br><br>
+
+<h2>문제점 해결</h2>
+
+대기목록에서 우선순위가 가장 높은 순으로 프린트 되어야하기 때문에 List에 대기목록을 저장한 뒤 `Collections`를 사용해 `max`값을 찾았다.
