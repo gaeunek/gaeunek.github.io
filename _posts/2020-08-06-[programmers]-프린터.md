@@ -43,10 +43,8 @@ public class Solution {
 				} else {
 					queue.add(now);
 				}
-			}
-
+            }
 			answer++;
-			
 			if (index == location)
 				return answer;
 		}
