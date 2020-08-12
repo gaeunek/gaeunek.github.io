@@ -66,3 +66,25 @@ public class Solution {
 <h2>문제점 해결</h2>
 
 대기목록에서 우선순위가 가장 높은 순으로 프린트 되어야하기 때문에 List에 대기목록을 저장한 뒤 `Collections`를 사용해 `max`값을 찾은 뒤 `queue`에서 하나씩 숫자를 빼며 비교한다.`max`값과 다르다면 다시 `queue`에 넣어주고 `max`값과 일치한다면 몇 번 째로 프린터 하는지 `index`값과 `location`값이 같은지 비교하여 정답을 도출해낸다.
+
+```java
+while (true) {
+			Integer max = Collections.max(list);
+			int index = 0;
+
+			while (true) {
+				Print now = queue.poll();
+				if (now.priority == max) {
+					index = now.location;
+					list.remove(max);
+					break;
+				} else {
+					queue.add(now);
+				}
+            }
+			answer++;
+			if (index == location)
+				return answer;
+		}
+```
+
