@@ -49,3 +49,7 @@ public class Solution {
 ```
 
 <br><br>
+
+<h2>문제점 해결</h2>
+
+`ArrayList`를 사용해서 `min`값과 `max`값을 찾아내는 부분이 핵심이라고 생각한다.
