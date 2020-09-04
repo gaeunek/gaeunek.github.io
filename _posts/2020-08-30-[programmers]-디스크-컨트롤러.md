@@ -52,4 +52,17 @@ public class Solution {
 
 <h2>문제점 해결</h2>
 
-요청부터 종료까지 걸린 시간의 평균을 가장 줄이는 방법을 return 하는 문제로 `PriorityQueue<>`를 
+요청부터 종료까지 걸린 시간의 평균을 가장 줄이는 방법을 return 하는 문제로 `PriorityQueue<>`를 사용해 해결했다.
+
+```java
+PriorityQueue<int[]> pq = new PriorityQueue<>((o1, o2) -> o1[1] - o2[1]);
+
+Arrays.sort(jobs, (o1, o2) -> o1[0] - o2[0]);
+```
+
+`PriorityQueue<>`는 작업의 소요시간을 기준으로 오름차순 정렬이며, `jabs`배열은 작업의 요청시간을 기준으로 오름차순 정렬하였다.
+
+```java
+while (idx < len && jobs[idx][0] <= time)
+    pq.offer(jobs[idx++]);
+```
