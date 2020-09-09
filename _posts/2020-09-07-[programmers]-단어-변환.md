@@ -75,3 +75,18 @@ class Solution {
 }
 ```
 
+<br><br>
+
+<h2>문제점 해결</h2>
+
+DFS로 풀 수 있는 문제였다. 문제에 나와있는 조건에만 유의한다면 쉽게 풀 수 있는 문제였다.
+
+```java
+if (wrong == 1) {
+	used[n] = true;
+	dfs(staticWords[n], cnt + 1);
+	used[n] = false;
+}
+```
+
+위의 부분이 한 번에 한 개의 알파벳만 바꿔야 한다는 조건을 반영한 부분이다.
