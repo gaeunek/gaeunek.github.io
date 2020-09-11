@@ -9,7 +9,7 @@ theme_settings :
 
   # Profile Settings
   profile :
-    image : assets/img/smile.png
+    image : assets/img/gaeun.png
     username : Gaeun Kim
     description : 개발 꿈나무의 블로그
     experience :
