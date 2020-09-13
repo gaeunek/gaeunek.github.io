@@ -19,7 +19,7 @@ comments : True
 
 #### 1. 확장된 2차원 배열을 만들어라.
 
-![lock_and_key.jpg](../assets/img/200913_lock_and_key.jpg)
+![lock_and_key.jpg](/assets/img/200913_lock_and_key.jpg)
 
 그림처럼 최소 key배열 1개의 인덱스와 lock배열 1개의 인덱스가 겹쳐지도록 확장된 배열을 생성하면 7 X 7 배열이 생성된다. 이때, 확장된 2차원 배열을 만들 때 크기가 정확하지않으면 런타임 에러에 빠질 수 있다.(오랜 시간이 걸린 부분이었다 ㅠㅠ)
 
