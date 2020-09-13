@@ -9,7 +9,7 @@ comments : True
 
 <h2>문제</h2>
 
-[programmers 자물쇠와 열쇠 문제 보러가기](https://programmers.co.kr/learn/courses/30/lessons/60059)
+[programmers 자물쇠와 열쇠 문제 보러가기](asset/img/200913_lock_and_key.jpg)
 
 <br><br>
 
