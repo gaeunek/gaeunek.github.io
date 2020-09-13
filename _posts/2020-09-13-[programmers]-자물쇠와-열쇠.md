@@ -11,7 +11,7 @@ comments : True
 
 [programmers 자물쇠와 열쇠 문제 보러가기](https://programmers.co.kr/learn/courses/30/lessons/60059)
 
-![]({{ https://programmers.co.kr/learn/courses/30/lessons/60059 }}{{ https://programmers.co.kr/learn/courses/30/lessons/60059 }}/assets/images/bio-photo-keyboard.jpg    )
+![]({{ learn/courses/30/lessons/60059 }}{{ https://programmers.co.kr/ }}/assets/images/bio-photo-keyboard.jpg    )
 
 <br><br>
 
