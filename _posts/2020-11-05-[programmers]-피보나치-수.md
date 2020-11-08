@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[programmers] 피보나치 수"
-subtitle : level 2
+subtitle : level 2 문제
 tags: [algorithm]
 author: Gaeun Kim
 comments : True
