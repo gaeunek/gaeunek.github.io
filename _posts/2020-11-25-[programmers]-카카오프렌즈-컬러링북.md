@@ -26,6 +26,8 @@ BFS(너비 우선 탐색 : Breadth-First Search)를 사용했다.
 
 <h2>풀이</h2>
 
+{% raw %}
+
 ```java
 import java.util.*;
 class Solution {
@@ -87,5 +89,4 @@ class Solution {
 }
 ```
 
-
-
+{% endraw %}
