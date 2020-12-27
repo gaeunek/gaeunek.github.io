@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[programmers] 불량 사용자"
-subtitle : level 3, 2018 KAKAO BLIND RECRUITMENT 문제
+subtitle : level 3, 2019 카카오 개발자 겨울 인턴십 문제
 tags: [algorithm]
 author: Gaeun Kim
 comments : True
