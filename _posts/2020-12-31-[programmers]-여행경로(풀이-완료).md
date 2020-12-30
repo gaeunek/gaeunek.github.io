@@ -21,7 +21,9 @@ comments : True
 
 질문하기 목록에 나와있는 반례란 반례는 모두 시도하던 중 발견한 이 반례 덕분에 오류를 발견할 수 있었다. (반례 작성해주신분 정말 감사합니다. ㅠㅠ)
 
-[참고 반례](https://programmers.co.kr/questions/10332)`{{"ICN","BOO" }, { "ICN", "COO" }, { "COO", "DOO" }, {"DOO", "COO"}, { "BOO", "DOO"} ,{"DOO", "BOO"}, {"BOO", "ICN" }, {"COO", "BOO"}}`
+`[['ICN','BOO' ], [ 'ICN', 'COO' ], [ 'COO', 'DOO' ], ['DOO', 'COO'], [ 'BOO', 'DOO'] ,['DOO', 'BOO'], ['BOO', 'ICN' ], ['COO', 'BOO']]`
+
+[참고 반례](https://programmers.co.kr/questions/10332)
 
 <br><br>
 
