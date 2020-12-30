@@ -25,7 +25,7 @@ comments : True
 
 해당 문제는 전위와 후위를 구하는 문제이다.
 
-> [위키백과 트리 순회](https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C)
+[위키백과 트리 순회](https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%A6%AC_%EC%88%9C%ED%9A%8C)
 
 <br>
 
