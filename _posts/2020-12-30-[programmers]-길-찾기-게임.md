@@ -140,7 +140,6 @@ class Solution {
 			answer[0][i] = po.get(i);
 			answer[1][i] = ps.get(i);
 		}
-		
 		return answer;
 	}
 	
