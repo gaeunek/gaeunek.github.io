@@ -34,7 +34,6 @@ class Solution {
 		while(min <= max) {
 			int mid = (min + max) / 2;
 			int cnt = 0;
-			
 			boolean flag = false;
 			
 			for (int i = 0; i < stones.length; i++) {
