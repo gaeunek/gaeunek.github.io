@@ -15,13 +15,11 @@ comments : True
 
 <h2>풀이</h2>
 
-<% raw %>
-
 ```java
 import java.util.*;
 
 class Solution {
-	static int[][] dir = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+	static int[][] dir = { {0, 1}, {1, 0}, {0, -1}, {-1, 0} };
 	static int N;
 	static int[][] arr;
 	static int answer;
@@ -86,5 +84,3 @@ class Solution {
 	}
 }
 ```
-
-<% endraw %>
