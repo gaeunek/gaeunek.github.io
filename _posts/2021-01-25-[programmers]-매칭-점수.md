@@ -13,6 +13,60 @@ comments : True
 
 <br><br>
 
+<h2>문제점 해결</h2>
+
+#### 1. 웹페이지의 url 추출
+
+각 웹페이지마다 url이 있고, 다른 웹페이지에서 외부링크로 참조할 수 있다. 링크 점수를 계산하기 위해선 본인이 어느 웹페이지의 외부링크로 들어가 있는지 알 수 있어야 하기 때문에 url과 index번호를 Map에 저장한 후 참조하고 있는 웹페이지(Page class)의 connect_link_list에 index번호를 저장해준다.
+
+```java
+for (int i = 0; i < len; i++) {
+    pages[i] = pages[i].toLowerCase();
+	meta_filter = pages[i].split("<meta property=\"og:url\" ");
+	url_filter = meta_filter[1].split("content=\"");
+	url_filter[1] = url_filter[1].replaceAll("\n", "");
+
+	String url = url_filter[1];
+	int j = 0;
+	for (j = 1; j < url.length(); j++) {
+		if (url.charAt(j) == '\"')
+			break;
+	}
+
+	url_list.put(url.substring(0, j), i);
+	result[i] = new Page(0, 0, 0);
+}
+```
+
+여기서 **주의할 점**은 url을 추출하는 부분이다. 처음에 난 "\</head\>"를 기준으로 1차 split 한 뒤, "content="를 기준으로 2차 split을 하여 url을 추출하였는데, 9번 테스트케이스가 통과가 안되서 위와 같이 바꿨더니 통과되었다. "<meta property=\"og:url\""가 핵심이었던 것같다.
+
+#### 2. 외부링크 추출
+
+각 웹페이지에서 참고하는 외부링크는 <a href= ... \</a\>와 같은 형태로 존재하기에 처음엔 공백을 기준으로 split한 후 "href="를 기준으로 split 했는데, 10번 테스트케이스가 통과가 안되서 아래와 같이 수정 한 후 통과되었다.
+
+```java
+String[] tmp = words.split("<a href=\"");
+for (int k = 0; k < tmp.length; k++) {
+    if (tmp[k].contains("</a>")) {
+		link_count++;
+		String s = tmp[k];
+
+		int c = 0;
+		for (c = 0; c < s.length(); c++) {
+			if (s.charAt(c) == '\"')
+				break;
+		}
+
+		String key = s.substring(0, c);
+						
+		if (url_list.get(key) != null)
+			result[url_list.get(key)].connect_link_list.add(i);
+	}
+}
+```
+
+<br><br>
+
 <h2>풀이</h2>
 
 ```java
