@@ -5,7 +5,11 @@
 수정시 매번 애플리케이션을 재실행하는 것이 귀찮으면 스프링 부트가 제공하는 DevTools를 사용하면 된다.
 
 ```markdown
-pom.xml → <dependency> 태그 밑에서 ctrl + Space → Edit Starters.. → pom.xml 수정 내용 저장 알림이 뜨면 Save Pom 선택 → Frequently Used에 DevTools가 있으면 체크, 없으면 왼쪽 Available에서 Core를 확장해 DevTools를 추가(내 버전에선 Developer Tools에 Sprnig Boot DevTools로 되어있음)
+1. pom.xml 클릭
+2. <dependency> 태그 밑에서 ctrl + Space
+3. Edit Starters.. 클릭
+4. pom.xml 수정 내용 저장 알림이 뜨면 Save Pom 선택
+5. Frequently Used에 DevTools가 있으면 체크, 없으면 왼쪽 Available에서 Core를 확장해 DevTools를 추가(내 버전에선 Developer Tools에 Sprnig Boot DevTools로 되어있음)
 ```
 
 > Spring Boot 버전
