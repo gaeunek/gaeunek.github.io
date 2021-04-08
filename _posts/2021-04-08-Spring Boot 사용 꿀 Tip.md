@@ -4,12 +4,13 @@
 
 수정시 매번 애플리케이션을 재실행하는 것이 귀찮으면 스프링 부트가 제공하는 DevTools를 사용하면 된다.
 
-```markdown
+```html
 1. pom.xml 클릭
 2. <dependency> 태그 밑에서 ctrl + Space
 3. Edit Starters.. 클릭
 4. pom.xml 수정 내용 저장 알림이 뜨면 Save Pom 선택
-5. Frequently Used에 DevTools가 있으면 체크, 없으면 왼쪽 Available에서 Core를 확장해 DevTools를 추가(내 버전에선 Developer Tools에 Sprnig Boot DevTools로 되어있음)
+5. Frequently Used에 DevTools가 있으면 체크, 없으면 왼쪽 Available에서 Core를 확장해 DevTools를 추가
+(내 버전에선 Developer Tools에 Sprnig Boot DevTools로 되어있음)
 ```
 
 > Spring Boot 버전
@@ -28,14 +29,26 @@
 
 <h5>롬복 라이브러리 등록 방법</h5>
 
-```markdown
-pom.xml → <dependency> 태그 밑에서 ctrl + Space → Edit Starters.. → pom.xml 수정 내용 저장 알림이 뜨면 Save Pom 선택 → Available에서 Core를 확장해 Lombok 추가(내 버전에선 Developer Tools에 Lombok으로 되어있음)
+```html
+1. pom.xml 클릭
+2. <dependency> 태그 밑에서 ctrl + Space
+3. Edit Starters.. 클릭
+4. pom.xml 수정 내용 저장 알림이 뜨면 Save Pom 선택 
+5. Available에서 Core를 확장해 Lombok 추가
+(내 버전에선 Developer Tools에 Lombok으로 되어있음)
 ```
 
 여기까진 라이브러리를 다운로드한 과정이며, 롬복을 사용하려면 **이클립스(STS) 설치 폴더에 롬복 라이브러리**를 추가해야 한다.
 
-```wiki
-https://projectlombok.org/download → lombok.jar 파일 다운로드 → cmd 창 열기 → lombok.jar 파일을 다운로드한 폴더로 이동 후 'java -jar lombok.jar' 입력 → 설치 화면이 뜨면 IDEs 항목에 현재 사용하는 이클립스(또는 STS)의 위치가 출력된다. 실행파일(.exe)의 경로를 확인하고 Intall/Update 클릭 → 설치 금방됨. Quit Installer 클릭 → 이클립스(STS) 설치 폴더에서 lombok.jar가 설치되어 있는지 확인 → 이클립스(STS) 재실행
+```html
+1. https://projectlombok.org/download 이동
+2. lombok.jar 파일 다운로드
+3. cmd 창 열기
+4. lombok.jar 파일을 다운로드한 폴더로 이동 후 'java -jar lombok.jar' 입력
+5. 설치 화면이 뜨면 IDEs 항목에 현재 사용하는 이클립스(또는 STS)의 위치가 출력된다. 실행파일(.exe)의 경로를 확인하고 Intall/Update 클릭
+6. 설치 금방됨. Quit Installer 클릭
+7. 이클립스(STS) 설치 폴더에서 lombok.jar가 설치되어 있는지 확인
+8. 이클립스(STS) 재실행
 ```
 
 참고로 @Data는 @Getter, @Setter, @RequiredArgsConstructor, @ToString, @EqualsAndHashCode 모두를 포함한다.
@@ -64,7 +77,11 @@ maven은 필요한 라이브러리를 특정 문서(pom.xml)에 정의해 놓으
 
 <h5>JPA dependency 추가 방법</h5>
 
-```xml
-https://mvnrepository.com/ → 'jpa' 검색 → Hibernate EntityManager Relocation 선택 → Version 선택(나는 5.4.10 버전을 선택) → Maven에 해당하는 내용 복사 후 dependency에 붙여넣기
+```html
+1. https://mvnrepository.com 이동
+2. 'jpa' 검색
+3. Hibernate EntityManager Relocation 선택
+4. Version 선택(나는 5.4.10 버전을 선택)
+5. Maven에 해당하는 내용 복사 후 dependency에 붙여넣기
 ```
 
