@@ -30,7 +30,7 @@ pom.xml → <dependency> 태그 밑에서 ctrl + Space → Edit Starters.. → p
 
 여기까진 라이브러리를 다운로드한 과정이며, 롬복을 사용하려면 **이클립스(STS) 설치 폴더에 롬복 라이브러리**를 추가해야 한다.
 
-```markdown
+```wiki
 https://projectlombok.org/download → lombok.jar 파일 다운로드 → cmd 창 열기 → lombok.jar 파일을 다운로드한 폴더로 이동 후 'java -jar lombok.jar' 입력 → 설치 화면이 뜨면 IDEs 항목에 현재 사용하는 이클립스(또는 STS)의 위치가 출력된다. 실행파일(.exe)의 경로를 확인하고 Intall/Update 클릭 → 설치 금방됨. Quit Installer 클릭 → 이클립스(STS) 설치 폴더에서 lombok.jar가 설치되어 있는지 확인 → 이클립스(STS) 재실행
 ```
 
@@ -60,7 +60,7 @@ maven은 필요한 라이브러리를 특정 문서(pom.xml)에 정의해 놓으
 
 <h5>JPA dependency 추가 방법</h5>
 
-```markdown
+```xml
 https://mvnrepository.com/ → 'jpa' 검색 → Hibernate EntityManager Relocation 선택 → Version 선택(나는 5.4.10 버전을 선택) → Maven에 해당하는 내용 복사 후 dependency에 붙여넣기
 ```
 
